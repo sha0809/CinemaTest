@@ -1,0 +1,75 @@
+print("Welcome to Room4 Cinema!")
+print(" ")
+
+print("Now Showing")        
+# now showing
+titles = ["Room 203","KGF Chapter 2"]
+for titles in titles:
+    print(titles)
+
+print(" ")
+proceed = input("Hi, are you watching with us today? ")
+if proceed == "yes":
+    print("Which movie will you watch today? ")
+    userReply = input("titles ")
+while True:
+    age = int(input("How old are you? "))
+    if age >= 18:
+        break;
+    else:
+        print("Sorry you are too young kid but you can try your luck with other movies? ")
+        print(" ")
+        proceed = input("Would you like to see other options that are PG rated? for kids hehe ")
+        if proceed == "yes":
+            print(" ")
+            print("Here are the options that is safe for you ;) ")
+            print("Fantastic Beast: The Secrets of Dumbledore"," ","or"," ","Everything Everywhere All at Once")
+            userReply = input()
+            break;
+
+proceed = input("Would you like to proceed? ")
+if proceed == "yes":
+    ticket = input("How many tickets do you want? ")
+    print("Here are {} copies of ticket.".format(ticket))
+    proceed = input("Thank you, Would you like to purchase snacks & drinks? ")
+    if proceed == "yes":
+        combo = input("Which combo would you prefer? (Enter combo A=Large Popcorn+Drink, B=Medium Popcorn+Drink OR C=Small Popcorn+Drink) " )
+        print("Your order will be ready for you at the counter. Please proceed to your hall. Thank you and enjoy! ")
+        print(" ")
+        if titles == "Room 203":
+            print("You will be in Hall 1")
+            print("https://www.youtube.com/watch?v=ycY1pUmCbaQ")
+        if titles == "KGF Chapter 2":
+            print("You will be in Hall 2")
+            print("https://www.youtube.com/watch?v=JKa05nyUmuQ")
+        if titles == "Fantastic Beast: The Secrets of Dumbledore":
+            print("You will be in Hall 3")
+            print("https://www.youtube.com/watch?v=Y9dr2zw-TXQ")
+        if titles == "Everything Everywhere All at Once":
+            print("You will be in Hall 4")
+            print("https://www.youtube.com/watch?v=wxN1T1uxQ2g")
+    if proceed == "no":
+        print("Thank you, please come again! ")
+        print(" ")
+        if titles == "Room 203":
+            print("You will be in Hall 1")
+            print("https://www.youtube.com/watch?v=ycY1pUmCbaQ")
+        if titles == "KGF Chapter 2":
+            print("You will be in Hall 2")
+            print("https://www.youtube.com/watch?v=JKa05nyUmuQ")
+        if titles == "Fantastic Beast: The Secrets of Dumbledore":
+            print("You will be in Hall 3")
+            print("https://www.youtube.com/watch?v=Y9dr2zw-TXQ")
+        if titles == "Everything Everywhere All at Once":
+            print("You will be in Hall 4")
+            print("https://www.youtube.com/watch?v=wxN1T1uxQ2g")
+      
+            
+
+    
+    
+  
+    
+    
+
+
